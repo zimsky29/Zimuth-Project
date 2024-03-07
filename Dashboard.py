@@ -4,7 +4,7 @@ import seaborn as sns
 import streamlit as st
 
 # Read data from CSV file
-days_df = pd.read_csv('c:/Users/muham/OneDrive/Documents/File Muhammad Azimuthal Hikam/Fisika UI/Semester 6_Fisika UI/Dicoding_Zimuth/Dashboard/daysdata.csv')
+days_df = pd.read_csv('daysdata.csv')
 days_df['season'] = days_df.season.astype('category')
 season_df = days_df.season.replace((1,2,3,4), ('Spring', 'Summer', 'Fall', 'Winter'))
 year_df = days_df.yr.replace((0,1), (2011,2012))
